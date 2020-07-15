@@ -1,10 +1,11 @@
+/* se quitan los margenes y paddings que vienen por defecto, se cambia el tipo de letra por uno mas bonito,se da un fondo obscuro */
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(51, 54, 53);
     padding: 0;
     margin: 0;
 }
-
+/* se da un tamaño de letra de 18px, se asigna display flex para poder justificar el contenido al centro, se le da un fondo aqua y color de letra obscuro */
 header{
     font-size: 18px;
     display: flex;
@@ -12,7 +13,7 @@ header{
     background-color: aqua;
     color: rgb(51, 54, 53);
 }
-
+/* dysplay flex para acomodar los items al centro de manera horizontal y vertical, un ancho del 100% del contenedor y una altura de solo 80px, un margen de 50px */
 .container-t{
     display: flex;
     justify-content: center;
@@ -21,11 +22,11 @@ header{
     height: 80px;
     margin-top: 50px;
 }
-
+/* color de letra aqua */
 .container-t h2{
     color: aqua;
 }
-
+/* fondo obscuro, pargen de ariba de 50px, display de reja con 3 columnas de tamaño variable y 2 filas una grande de 250px y una pequeña de 70px, espacioentre filas de 20px y entre columnas de 25px aliniado de items al centro de manera horizontal */
 .container-a {
     background-color: rgb(51, 54, 53);
     margin-top: 50px;
@@ -35,7 +36,7 @@ header{
     gap: 20px 25px;
     justify-content: center;
 }
-
+/* margen automatico para centrar por el display por defecto tipo bloque, alineado de texto al centro, imagen de fondo desde una url con tamaño del contenedor y posisionada al centro, configurado para no repetirse, altura y ancho de 250px borde circular, color de fondo aqua */
 .piedra{
     margin: auto;
     text-align: center;
@@ -48,7 +49,7 @@ header{
     border-radius: 50%;
     background-color: aqua;
 }
-
+/* margen automatico para centrar por el display por defecto tipo bloque, alineado de texto al centro, imagen de fondo desde una url con tamaño del contenedor y posisionada al centro, configurado para no repetirse, altura y ancho de 250px borde circular, color de fondo aqua */
 .papel{
     margin: auto;
     text-align: center;
@@ -61,7 +62,7 @@ header{
     border-radius: 50%;
     background-color: aqua;
 }
-
+/* margen automatico para centrar por el display por defecto tipo bloque, alineado de texto al centro, imagen de fondo desde una url con tamaño del contenedor y posisionada al centro, configurado para no repetirse, altura y ancho de 250px borde circular, color de fondo aqua */
 .tijeras{
     margin: auto;
     text-align: center;
@@ -74,15 +75,15 @@ header{
     border-radius: 50%;
     background-color: aqua;
 }
-
+/* aliniado del texto al centro */
 .select-piedra, .select-papel, .select-tijeras{
     text-align: center;
 }
-
+/* cursor en forma de manita al pasar por el elemento */
 .only-one{
     cursor: pointer;
 }
-
+/* color de letra aqua, ancho de 100px, tamaño de letra de 20px, en negritas */
 label{
     color: aqua;
     width: 100px;
@@ -90,12 +91,12 @@ label{
     font-weight: bold;
 
 }
-
+/* display de flex para poder acomodar el contenido al centro de manera horizontal */
 footer{
     display: flex;
     justify-content: center;
 }
-
+/* display de flex para acomodar el contenido al centro de manera horizontal y vertical, ancho del 100%altura de 80px y un margen hacia ariba y hacia abajo de 60px y hacia los lados de 0, color de fondo aqua */
 .container-r{
     display: flex;
     justify-content: center;
@@ -105,12 +106,12 @@ footer{
     margin: 60px 0;
     background-color:aqua ;
 }
-
+/* margen automatico para centrar contenido color de letra obscuro*/
 .container-r h2{
     margin: auto;
     color: rgb(51, 54, 53);
 }
-
+/* tamaño de letra de 20px en negritas ancho del boton de 250px y altura de 80px, color de texto aqua con fondo obscuro y un redondeado en los bordes de 15 px un bordeado de 1 px solido color aqua y el borde de abajo y derecho aumenta a un grosor de 4px, al pasar el mouse por el boton cambia a manita */
 .boton{
     font-size: 20px;
     font-weight: bold;
@@ -124,6 +125,26 @@ footer{
     border-right: 4px solid aqua;
     cursor: pointer;
 }
+/* se quita el efecto de borde negro al selecionar el boton, cambia el color a un tono mas obscuro de aqua al estar seleccionado */
 .boton:focus{
     outline: none;
+    border-bottom: 4px solid rgb(0, 141, 141);
+    border-right: 4px solid rgb(0, 141, 141);
+}
+/* se modifican los checkboxes dandoles altura y ancho, color de fono obscuro, redondeado , aliniado vericalmente enmedio, bordeado de 2px solido color aqua, se le quita el bordeado al selecionarlo cursor de manita al pasar por el elemento */
+input{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: rgb(51, 54, 53);
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid aqua;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+/* cuando el check box esta selecionado cambia el fono a aqua y el bordeado a negro */
+input:checked {
+    background-color: aqua;
+    border: 2px solid black;
 }
