@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ppt.css">
+    <title>Piedra Papel Tijeras</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra Papel o Tijeras</h1>
+    </header>
+    <section class="container-t">
+        <h2> Seleciona uno para competir contra la Maquina </h2>
+    </section>
+    <section class="container-a">
+        <div class="piedra">
+        </div>
+        <div class="papel">
+        </div>
+        <div class="tijeras">
+        </div>
+        <div class="select-piedra">
+            <label>Piedra<br><br><input type="checkbox"id="piedra-chk"  class="only-one"></label>
+        </div>
+        <div class="select-papel">
+            <label>Papel<br><br><input type="checkbox"id="papel-chk"  class="only-one"></label>
+        </div>
+        <div class="select-tijeras">
+            <label>Tijeras<br><br><input type="checkbox"id="tijeras-chk" class="only-one"></label>
+        </div>
+    </section>
+    <section class="container-r">
+        <h2 id="resultado"></h2>
+    </section>
+    <footer>
+        <button id="start" class="boton">Piedra, papel o tijeras</button>
+    </footer>
+    <script src="/piedra-papel-tijera.js"></script>
+</body>
+</html>

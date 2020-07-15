@@ -1,0 +1,129 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(51, 54, 53);
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    color: rgb(51, 54, 53);
+}
+
+.container-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.container-t h2{
+    color: aqua;
+}
+
+.container-a {
+    background-color: rgb(51, 54, 53);
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 250px 70px;
+    gap: 20px 25px;
+    justify-content: center;
+}
+
+.piedra{
+    margin: auto;
+    text-align: center;
+    background: url("https://cdn.pixabay.com/photo/2017/07/27/09/56/sphere-stone-2544690_960_720.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.papel{
+    margin: auto;
+    text-align: center;
+    background: url("https://cdn.pixabay.com/photo/2016/10/23/15/47/paper-1763262_960_720.png");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.tijeras{
+    margin: auto;
+    text-align: center;
+    background: url("https://cdn.pixabay.com/photo/2017/09/25/01/50/scissors-2783765_960_720.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.select-piedra, .select-papel, .select-tijeras{
+    text-align: center;
+}
+
+.only-one{
+    cursor: pointer;
+}
+
+label{
+    color: aqua;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.container-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 60px 0;
+    background-color:aqua ;
+}
+
+.container-r h2{
+    margin: auto;
+    color: rgb(51, 54, 53);
+}
+
+.boton{
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 80px;
+    color: aqua;
+    background-color: rgb(51, 54, 53);
+    border-radius: 15px;
+    border: 1px solid aqua;
+    border-bottom: 4px solid aqua;
+    border-right: 4px solid aqua;
+    cursor: pointer;
+}
+.boton:focus{
+    outline: none;
+}
