@@ -37,6 +37,7 @@ function maquina(){
         default:
             ia = 'papel';
             seleccion();
+            break;
     }
 }
 
@@ -51,24 +52,25 @@ function seleccion(){
         case true:
             usuario = 'piedra';
             console.log(usuario);
-            ppt(usuario, ia);
+            ppt();
             break;
         default:
             switch(papel){
                 case true:
                     usuario = 'papel';
                     console.log(usuario);
-                    ppt(usuario, ia);
+                    ppt();
                     break;
                 default:
                     switch(tijeras){
                         case true:
                             usuario = 'tijeras';
                             console.log(usuario);
-                            ppt(usuario, ia);
-                            break
+                            ppt();
+                            break;
                         default:
                             error();
+                            break;
                     }
             }
     }                            
@@ -78,7 +80,7 @@ function error(){
     document.getElementById('resultado').innerHTML='Seleciona por favor, Piedra, Papel o Tijeras';
 }
 // esta funcion piedra papel tijeras abreviada toma 2 valores dados en la funcion anterior en este caso 'usuario' y 'ia', usuario es validado por un if, en caso de cumplirse entrara a otro siclo de ifs donde se comparara con la variable ia que es el resultado de la funcion maquina, segun los valores de las variables se cumplira 1 de los 9 esenarios diferentes
-function ppt(valor1, valor2){
+function ppt(){
     switch(usuario){
         case 'piedra':
             switch(ia){
@@ -92,6 +94,7 @@ function ppt(valor1, valor2){
                     document.getElementById('resultado').innerHTML='La Maquina uso piedra, es un empate';
                     break;
             }
+            break;
         case 'papel':
             switch(ia){
                 case 'papel':
@@ -104,6 +107,7 @@ function ppt(valor1, valor2){
                     document.getElementById('resultado').innerHTML='La Maquina uso piedra, Tu ganas';
                     break;
             }
+            break;
         default:
             switch(ia){
                 case 'papel':
@@ -116,5 +120,6 @@ function ppt(valor1, valor2){
                     document.getElementById('resultado').innerHTML='La Maquina uso piedra, Tu pierdes';
                     break;
             }
+            break;
     }
 }
